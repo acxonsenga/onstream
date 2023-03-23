@@ -1,0 +1,47 @@
+body{
+    background-color: dimgrey;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+logo{
+    width: 140px;
+}
+.album-links{
+    padding: 28px 0;
+}
+.album-links li{
+    display: inline-block;
+    margin: 0 15px;
+}
+.album-links li a{
+    text-decoration: none;
+    color: black;
+    padding: 5px 0;
+    position: relative;
+}
+.album-links li a::after{
+    content: '';
+    background: black;
+    width:0;
+    height:2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.5s;
+}
+.album-links li a:hover::after{
+    width: 100%;
+}
+.list-class{
+    font-size: 50px;
+    color: black;
+    background-color: red;
+}
+#only{
+    
+    float: inherit;
+}
